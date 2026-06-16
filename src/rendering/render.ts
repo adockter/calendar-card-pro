@@ -579,15 +579,6 @@ function renderDateColumn(
     >
       ${weekday}
     </div>
-    <div
-      class="day"
-      style=${styleMap({
-        'font-size': config.day_font_size,
-        color: dayColor,
-      })}
-    >
-      ${day}
-    </div>
     ${config.show_month
       ? html`
           <div
@@ -598,7 +589,16 @@ function renderDateColumn(
             })}
           >
             ${month}
-          </div>
+          </div>    
+    <div
+      class="day"
+      style=${styleMap({
+        'font-size': config.day_font_size,
+        color: dayColor,
+      })}
+    >
+      ${day}
+    </div>
         `
       : nothing}
     ${weatherContent}
