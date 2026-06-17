@@ -589,7 +589,9 @@ function renderDateColumn(
             })}
           >
             ${month}
-          </div>    
+          </div>
+        `
+      : nothing}
     <div
       class="day"
       style=${styleMap({
@@ -599,8 +601,6 @@ function renderDateColumn(
     >
       ${day}
     </div>
-        `
-      : nothing}
     ${weatherContent}
   `;
 }
